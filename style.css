@@ -1,50 +1,76 @@
 :root {
-  --primary: #3a6351;
-  --accent: #c97b63;
-  --bg: #faf7f2;
+  --red:#C91F37;
+  --dark:#2D2D2D;
+  --bg:#F5F5F5;
+  --gold:#C9A15D;
 }
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
-  background: var(--bg);
-  color: #333;
-  line-height: 1.8;
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);
+  color:var(--dark);
 }
-.header {
-  background: var(--primary);
-  color: #fff;
-  padding: 24px 16px;
-  text-align: center;
+header{
+  background:var(--red);
+  color:#fff;
+  padding:22px 16px 16px;
 }
-.header p { opacity: 0.85; font-size: 14px; }
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+header h1{
+  margin:0;
+  font-size:22px;
+  letter-spacing:2px;
 }
-.nav a {
-  flex: 1 1 33%;
-  text-align: center;
-  padding: 10px 4px;
-  text-decoration: none;
-  color: var(--primary);
-  font-size: 14px;
+header p{
+  margin:6px 0 0;
+  font-size:13px;
+  opacity:.9;
 }
-.section {
-  padding: 16px;
-  background: #fff;
-  margin: 12px;
-  border-radius: 10px;
+.topbar{
+  background:#fff;
+  font-size:12px;
+  padding:6px 16px;
+  border-bottom:1px solid #ddd;
 }
-.section h2 {
-  color: var(--primary);
-  border-left: 4px solid var(--accent);
-  padding-left: 8px;
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  background:#fff;
 }
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 13px;
-  color: #777;
+nav a{
+  flex:1 1 33%;
+  text-align:center;
+  padding:12px 4px;
+  font-size:14px;
+  font-weight:600;
+  color:var(--dark);
+  text-decoration:none;
+  border-bottom:1px solid #eee;
 }
+nav a:nth-child(3n){border-right:none;}
+section{
+  margin:12px;
+  background:#fff;
+  border-radius:4px;
+  box-shadow:0 2px 6px rgba(0,0,0,.05);
+}
+section h2{
+  margin:0;
+  padding:12px 14px;
+  font-size:17px;
+  color:var(--red);
+  border-left:5px solid var(--gold);
+  background:#FAFAFA;
+}
+section .content{
+  padding:14px;
+  font-size:15px;
+  line-height:1.9;
+}
+.footer{
+  text-align:center;
+  font-size:12px;
+  color:#999;
+  padding:20px;
+  background:#2D2D2D;
+  color:#ccc;
+｝
